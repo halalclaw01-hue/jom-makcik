@@ -25,9 +25,7 @@ COPY package*.json ./
 COPY src/ ./src/
 
 # Create persistent data directory
-RUN mkdir -p /app/data && chown -R node:node /app
-
-USER node
+RUN mkdir -p /app/data
 
 ENV NODE_ENV=production
 ENV PORT=4000
