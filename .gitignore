@@ -1,1 +1,39 @@
+# Dependencies
 node_modules/
+
+# Environment files (secrets)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# SQLite database files
+*.sqlite
+*.sqlite3
+data/
+
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Expo
+.expo/
+*.jks
+*.keystore
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
