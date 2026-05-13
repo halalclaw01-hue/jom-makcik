@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Jom Makcik CareRide",
+    "slug": "jom-makcik-careride",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "com.jommakcik.careride"
+    },
+    "extra": {
+      "apiBaseUrl": "http://10.0.2.2:4000"
+    },
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Jom Makcik Rider",
+    "slug": "jom-makcik-rider",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.jommakcik.rider"
+    },
+    "extra": {
+      "apiBaseUrl": "http://10.0.2.2:4000"
+    },
+    "plugins": ["expo-asset"]
+  }
+}

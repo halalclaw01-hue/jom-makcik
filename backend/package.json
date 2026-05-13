@@ -1,0 +1,35 @@
+{
+  "name": "jom-makcik-careride-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend API foundation for the Jom Makcik CareRide MVP.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "check": "node --check src/server.js",
+    "db:setup": "node src/db/setup.js",
+    "db:reset": "node src/db/reset.js",
+    "db:verify": "node src/db/verify.js",
+    "test:booking-status": "node src/bookings/bookingStatus.manualTest.js",
+    "test:passenger-bookings": "node src/bookings/passengerBookings.manualTest.js",
+    "test:payment-proofs": "node src/payments/paymentProofs.manualTest.js",
+    "test:rider-approval": "node src/riders/riderApproval.manualTest.js",
+    "test:matching": "node src/matching/matching.manualTest.js",
+    "test:trip-status": "node src/trips/tripStatus.manualTest.js",
+    "test:chat": "node src/chat/chat.manualTest.js",
+    "test:care-report": "node src/careReports/careReport.manualTest.js",
+    "test:admin-bookings": "node src/bookings/adminBookings.manualTest.js",
+    "test:reports": "node src/reports/reports.manualTest.js",
+    "test:audit-logs": "node src/auditLogs/auditLogs.manualTest.js",
+    "test:mvp": "node src/mvp/mvpEndToEnd.manualTest.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
