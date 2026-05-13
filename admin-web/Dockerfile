@@ -6,17 +6,17 @@ ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY admin-web/package*.json ./
 RUN npm ci
 
-COPY . .
+COPY admin-web/ .
 RUN npm run build
 
 # Serve stage
 FROM nginx:alpine
 
 COPY --from=build /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY admin-web/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
