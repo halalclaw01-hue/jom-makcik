@@ -41,6 +41,14 @@ function createApp() {
   app.use(express.json({ limit: "1mb" }));
   app.use(requestLogger);
 
+  app.get("/", (req, res) => {
+    res.json({
+      service: "jom-makcik-careride-backend",
+      version: "0.1.0",
+      docs: "/health",
+    });
+  });
+
   app.use("/health", healthRouter);
   app.use("/auth", authRouter);
   app.use("/bookings", bookingChatRouter);
