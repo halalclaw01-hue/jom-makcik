@@ -1,0 +1,16 @@
+node_modules/
+.git/
+.env
+*.sqlite
+data/
+dist/
+dist-ssr/
+build/
+.expo/
+*.log
+.DS_Store
+*.md
+docs/
+How To Install.rtf
+.gitignore
+.dockerignore
