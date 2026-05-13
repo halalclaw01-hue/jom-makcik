@@ -20,8 +20,24 @@ const { adminAuditLogsRouter } = require("./routes/adminAuditLogs");
 
 function createApp() {
   const app = express();
+  const { config } = require("./config/env");
 
-  app.use(cors());
+  const corsOptions = {
+    origin: (origin, callback) => {
+      // Allow requests with no origin (mobile apps, curl, health checks, server-to-server)
+      if (!origin) return callback(null, true);
+
+      if (config.corsOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      console.warn(`[CORS] Blocked origin: ${origin}`);
+      callback(new Error(`Origin ${origin} not allowed by CORS`));
+    },
+    credentials: true,
+  };
+
+  app.use(cors(corsOptions));
   app.use(express.json({ limit: "1mb" }));
   app.use(requestLogger);
 
