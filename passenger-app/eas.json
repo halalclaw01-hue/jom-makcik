@@ -3,12 +3,18 @@
   "build": {
     "preview": {
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_API_BASE_URL": "http://trkil295kr3pg22ae1mk9o0h.76.13.212.82.sslip.io"
+        }
       }
     },
     "production": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "env": {
+          "EXPO_PUBLIC_API_BASE_URL": "http://trkil295kr3pg22ae1mk9o0h.76.13.212.82.sslip.io"
+        }
       }
     }
   }
