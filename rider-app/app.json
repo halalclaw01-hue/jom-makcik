@@ -5,13 +5,21 @@
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "platforms": ["android"],
+    "platforms": [
+      "android"
+    ],
     "android": {
       "package": "com.jommakcik.rider"
     },
     "extra": {
-      "apiBaseUrl": "http://10.0.2.2:4000"
+      "apiBaseUrl": "http://10.0.2.2:4000",
+      "eas": {
+        "projectId": "c1767f3f-04c7-43d6-9639-81af6a1afeba"
+      }
     },
-    "plugins": ["expo-asset"]
+    "plugins": [
+      "expo-asset"
+    ],
+    "owner": "ludbajamal"
   }
 }

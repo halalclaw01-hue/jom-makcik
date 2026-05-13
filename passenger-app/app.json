@@ -12,10 +12,14 @@
       "package": "com.jommakcik.careride"
     },
     "extra": {
-      "apiBaseUrl": "http://10.0.2.2:4000"
+      "apiBaseUrl": "http://10.0.2.2:4000",
+      "eas": {
+        "projectId": "73fdc58f-a81b-4364-98b0-57e5a2511744"
+      }
     },
     "plugins": [
       "expo-asset"
-    ]
+    ],
+    "owner": "ludbajamal"
   }
 }
